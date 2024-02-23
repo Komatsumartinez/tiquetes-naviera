@@ -24,6 +24,7 @@ namespace Tiquetes.Naviera.API
         // Este método se llama por el tiempo de ejecución. Usa este método para agregar servicios al contenedor.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API de Tiquetes Naviera", Version = "v1" });

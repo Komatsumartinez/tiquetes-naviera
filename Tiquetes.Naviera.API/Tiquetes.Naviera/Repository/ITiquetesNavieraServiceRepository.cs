@@ -9,10 +9,10 @@ namespace Tiquetes.Naviera.Repository
 {
     public interface ITiquetesNavieraServiceRepository
     {
-        Task<Tiquete> GetTiquete(Guid id);
-        Task<List<Tiquete>> GetAllTiquetes();
-        Task CreateTiquetes(Tiquete model);
-        Task UpdateTiquetes(Tiquete model);
+        Task<TiqueteDto> GetTiquete(Guid id);
+        Task<List<TiqueteDto>> GetAllTiquetes();
+        Task CreateTiquetes(TiqueteDto model);
+        Task UpdateTiquetes(TiqueteDto model);
         Task DeleteTiquetes(Guid id);
     }
 }

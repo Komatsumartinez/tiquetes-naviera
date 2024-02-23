@@ -1,0 +1,8 @@
+<!-- ticket-list.component.html -->
+<ul>
+    <li *ngFor="let ticket of tickets$ | async">
+      {{ ticket.nombre }} - {{ ticket.destino }}
+      <!-- Botones o acciones para editar/eliminar -->
+    </li>
+  </ul>
+  

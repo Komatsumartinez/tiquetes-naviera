@@ -39,7 +39,7 @@ namespace Tiquetes.Naviera.API.Controllers
 
         // POST: api/Naviera
         [HttpPost]
-        public IActionResult Create(Tiquete tiquete)
+        public IActionResult Create(TiqueteDto tiquete)
         {
             _service.CreateTiquetes(tiquete);
             return CreatedAtAction(nameof(GetById), new { id = tiquete.Id }, tiquete);
@@ -47,7 +47,7 @@ namespace Tiquetes.Naviera.API.Controllers
 
         // PUT: api/Naviera/5
         [HttpPut("{id}")]
-        public IActionResult Update(Tiquete tiquete)
+        public IActionResult Update(TiqueteDto tiquete)
         {
 
             _service.UpdateTiquetes(tiquete);

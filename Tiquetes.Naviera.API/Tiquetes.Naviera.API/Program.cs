@@ -15,7 +15,7 @@ namespace MiAplicacion
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>(); // Especifica Startup como la clase principal
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }

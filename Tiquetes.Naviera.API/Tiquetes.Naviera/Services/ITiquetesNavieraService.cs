@@ -9,10 +9,10 @@ namespace Tiquetes.Naviera.Services
 {
     public interface ITiquetesNavieraService
     {
-        Task CreateTiquetes(Tiquete model);
+        Task CreateTiquetes(TiqueteDto model);
         Task DeleteTiquetes(Guid id);
-        Task<List<Tiquete>> GetAllTiquetes();
-        Task<Tiquete> GetTiquete(Guid id);
-        Task UpdateTiquetes(Tiquete model);
+        Task<List<TiqueteDto>> GetAllTiquetes();
+        Task<TiqueteDto> GetTiquete(Guid id);
+        Task UpdateTiquetes(TiqueteDto model);
     }
 }
