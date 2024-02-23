@@ -1,0 +1,34 @@
+{
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SecretKey": "eJA4d2nWJa4EbU_1TuM4pTJ_H33FKrfSXUYMPyXve4Q",
+        "ConnectionStrings:MySqlConnection":"Server=tiquetesnaviera.cff7thc9uyue.us-east-1.rds.amazonaws.com;Port=3306;Database=TiquetesNaviera;Uid=admintickets;Pwd=Temporal01!;"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "8081",
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:12081",
+      "sslPort": 44325
+    }
+  }
+}
